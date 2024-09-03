@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import MobileNavbar from './components/MobileNavbar';
 import Home from './pages/Home';
 import Events from './pages/Events';
+import Technical from './pages/Technical';
+import NonTechnical from './pages/NonTechnical';
 
 const App = () => {
 
@@ -16,6 +18,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/events' element={<Events />} />
+        <Route path='/technical' element={<Technical />} />
+        <Route path='/nontechnical' element={<NonTechnical />} />
         
       </Routes>
     </Router>
