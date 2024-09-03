@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = ({ openNav, setOpenNav }) => {
   return (
     <nav
-      className={`flex flex-col items-center justify-center gap-16 fixed md:absolute ${
+      className={`flex flex-col items-center justify-center gap-16 fixed md:absolute border-b border-b-arcane-primary ${
         openNav ? "top-0" : "top-[-150%]"
       } left-0 h-[100vh] w-full bg-black text-white font-medium tracking-wide transition-all duration-500 ease-in-out md:flex-row md:justify-between md:p-2 md:h-[unset] md:top-0 md:gap-0 z-50 md:px-10`}
     >
@@ -22,11 +22,11 @@ const Navbar = ({ openNav, setOpenNav }) => {
           <img
             src={"/images/logo.png"}
             alt="Arcane"
-            className="max-h-full max-w-full"
+            className="max-w-full max-h-full"
           />
         </Link>
       </div>
-      <div className="flex flex-col md:flex-row items-center gap-4">
+      <div className="flex flex-col items-center gap-4 md:flex-row">
         <ul className="flex flex-col items-center gap-4 font-expletus-sans px-6 py-4 rounded-xl md:flex-row md:gap-10 md:py-3 md:px-8 md:h-[55px]">
           <li className="hover:pb-2 transition-all duration-300 ease-out hover:text-[#858585]">
             <Link to="/" onClick={() => setOpenNav(!openNav)}>

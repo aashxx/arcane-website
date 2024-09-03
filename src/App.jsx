@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import MobileNavbar from './components/MobileNavbar';
 import Home from './pages/Home';
+import Events from './pages/Events';
 
 const App = () => {
 
@@ -14,6 +15,8 @@ const App = () => {
       <Navbar openNav={openNav} setOpenNav={setOpenNav} />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/events' element={<Events />} />
+        
       </Routes>
     </Router>
   )
