@@ -7,7 +7,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "font-valorax": ["Valorax", "sans-serif"]
+        "valorax": ["Valorax", "sans-serif"],
+        "expletus-sans": ["Expletus Sans", "sans-serif"]
+      },
+      colors: {
+        "arcane-primary": "#9E325F"
       }
     },
   },

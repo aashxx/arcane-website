@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import MobileNavbar from './components/MobileNavbar';
 
 const App = () => {
+
+  const [openNav, setOpenNav] = useState(false);
+
   return (
-    <div className='font-font-valorax text-5xl font-bold'>Arcane'24</div>
+    <Router>
+      <MobileNavbar openNav={openNav} setOpenNav={setOpenNav} />
+      <Navbar openNav={openNav} setOpenNav={setOpenNav} />
+      <Routes></Routes>
+    </Router>
   )
 }
 
