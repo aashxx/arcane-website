@@ -35,19 +35,19 @@ const Timer = () => {
   return (
     <div className="flex gap-4 items-center justify-center text-white px-4">
       <div className="flex flex-col items-center justify-center h-[130px] w-[130px] rounded-lg bg-arcane-primary">
-        <span className="text-4xl md:text-5xl font-bold font-valorax">{timeLeft.days}</span>
+        <span className="text-4xl md:text-5xl font-valorax">{timeLeft.days}</span>
         <span className="text-md font-medium">Days</span>
       </div>
       <div className="flex flex-col items-center justify-center h-[130px] w-[130px] rounded-lg bg-arcane-primary">
-        <span className="text-4xl md:text-5xl font-bold font-valorax">{timeLeft.hours}</span>
+        <span className="text-4xl md:text-5xl font-valorax">{timeLeft.hours}</span>
         <span className="text-md font-medium">Hours</span>
       </div>
       <div className="flex flex-col items-center justify-center h-[130px] w-[130px] rounded-lg bg-arcane-primary">
-        <span className="text-4xl md:text-5xl font-bold font-valorax">{timeLeft.minutes}</span>
+        <span className="text-4xl md:text-5xl font-valorax">{timeLeft.minutes}</span>
         <span className="text-md font-medium">Minutes</span>
       </div>
       <div className="flex flex-col items-center justify-center h-[130px] w-[130px] rounded-lg bg-arcane-primary">
-        <span className="text-4xl md:text-5xl font-bold font-valorax">{timeLeft.seconds}</span>
+        <span className="text-4xl md:text-5xl font-valorax">{timeLeft.seconds}</span>
         <span className="text-md font-medium">Seconds</span>
       </div>
     </div>

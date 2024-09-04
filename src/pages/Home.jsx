@@ -3,6 +3,11 @@ import React from 'react';
 import AnimatedShinyText from '../components/magicui/animated-shiny-text';
 import { ArrowRightIcon } from 'lucide-react';
 import Timer from '@/components/Timer';
+import SpotLight from '@/components/SpotLight';
+import { NON_TECH_EVENTS, SPOTLIGHT, TECH_EVENTS } from '../utils/constants';
+import { VelocityScroll } from '@/components/magicui/scroll-based-velocity';
+import { RevVelocityScroll } from '@/components/magicui/rev-scroll-based-velocity';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -20,7 +25,7 @@ const Home = () => {
                     </AnimatedShinyText>
                 </div>
             </div>
-            <h1 className='text-white font-extrabold text-5xl md:text-6xl font-valorax text-center'>
+            <h1 className='text-white text-5xl md:text-6xl font-valorax text-center'>
                 Code the Impossible
             </h1>
             <p className='text-white text-center text-md font-medium'>
@@ -47,11 +52,85 @@ const Home = () => {
                 </aside>
             </div>
         </section>
-        <section className='bg-[#171717] py-10'>
+        <section className='bg-[#171717] py-10 z-20 relative'>
             <Timer />
         </section>
-        <section className='bg-black py-14'>
-            
+        <section className='py-14 relative bg-black overflow-hidden'>
+            <div className="h-64 w-96 bg-arcane-primary absolute md:-right-24 z-10 rounded-full blur-[150px]" />
+            <div className='relative mt-10 z-20'>
+                <h3 className='text-white px-4 font-valorax text-2xl md:text-4xl text-center'>
+                    Meet the <span className='text-arcane-primary'>Executive</span> Board
+                </h3>
+                <aside className='overflow-x-hidden mt-8 md:block hidden'>
+                    <SpotLight />
+                </aside>
+                <aside className='overflow-x-scroll mt-8 flex items-center gap-4 md:hidden'>
+                    {
+                        SPOTLIGHT.map((img) => (
+                            <img className='rounded-lg w-[165px] h-[231px] object-cover' src={img.img} alt={img.alt} />
+                        ))
+                    }
+                </aside>
+            </div>
+            <div className="h-64 w-96 bg-arcane-primary absolute md:-left-24 z-10 rounded-full blur-[150px] hidden md:block" />
+            <div className='bg-arcane-primary z-20 rounded-lg relative p-4 md:p-10 md:h-[230px] mt-14 md:mt-20 md:mx-32 mx-4'>
+                <img className='max-h-full hidden md:block absolute top-0 right-0' src={'/images/ben-card.png'} alt="AV" />
+                <h3 className='font-valorax text-center md:text-left text-white text-2xl md:text-4xl uppercase z-30'>
+                    Technical & <br /><span className='text-black'>Non</span> Technical Events
+                </h3>
+                <aside className='flex md:justify-between justify-center items-center mt-6'>
+                    <button className='px-10 py-2 text-white bg-black z-20'>
+                        Register Now
+                    </button>
+                    <button className='px-14 text-2xl hidden md:block mr-10 py-2 text-white bg-[#18181B] z-30 rounded-lg font-valorax'>
+                        2 days
+                    </button>
+                </aside>
+            </div>
+            <div className='mt-16 z-20 relative'>
+                <Link to={'/'}>
+                    <VelocityScroll 
+                        text={` - ${[...TECH_EVENTS].join(' - ')}`} 
+                        default_velocity={1}
+                        className={'md:text-6xl text-5xl font-valorax text-white hover:text-arcane-primary'}
+                    />
+                </Link>
+                <Link to={'/'}>
+                    <RevVelocityScroll
+                        text={` - ${[...NON_TECH_EVENTS].join(' - ')}`} 
+                        default_velocity={1}
+                        className={'md:text-6xl text-5xl font-valorax text-white hover:text-arcane-primary'}
+                    />
+                </Link>
+            </div>
+        </section>
+        <section className='md:py-16 py-10 md:px-32 px-4 bg-white flex gap-10 flex-col-reverse md:flex-row'>
+            <div className='md:w-[50%] w-full flex flex-col gap-5 items-center md:items-start px-4'>
+                <h2 className='text-4xl text-center md:text-left text-arcane-primary font-valorax'>
+                    We are Arcane
+                </h2>
+                <p className='text-justify'>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum est repellendus, quidem maxime, rem provident tempore quas, accusantium sit nesciunt facilis illum numquam. Labore harum quam cumque possimus dolor odio delectus magni eum quod non ipsa aperiam reiciendis repellat perspiciatis perferendis voluptate corporis, totam ea aspernatur quidem ullam inventore. Ducimus.
+                </p>
+                <p className='text-justify'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in, maiores consectetur quaerat at deleniti eveniet asperiores. Magni ipsa, iusto quia aspernatur dignissimos obcaecati temporibus!
+                </p>
+                <button className='px-10 py-2 text-white bg-arcane-primary mt-5 z-20'>
+                    Register Now
+                </button>
+            </div>
+            <div className='rounded-lg bg-arcane-primary w-full md:w-[50%]'>
+            </div>
+        </section>
+        <section className='bg-black relative md:py-14 py-10 md:px-32 px-4'>
+            <h3 className='text-arcane-primary px-4 font-valorax text-2xl md:text-4xl text-center'>
+                Sponsored By
+            </h3>
+            <div className='flex flex-col md:flex-row gap-10 items-center justify-center mt-10'>
+                <aside className='rounded-lg bg-[#1C1C1C] h-[200px] w-[200px]' />
+                <aside className='rounded-lg bg-[#1C1C1C] h-[200px] w-[200px]' />
+                <aside className='rounded-lg bg-[#1C1C1C] h-[200px] w-[200px]' />
+            </div>
         </section>
     </main>
   )

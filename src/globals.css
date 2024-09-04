@@ -12,3 +12,11 @@
 *::-webkit-scrollbar {
     width: 0;
 }
+
+* {
+    user-select: none;
+}
+
+#executive-board {
+    cursor: none;
+}
