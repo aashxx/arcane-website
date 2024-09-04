@@ -28,7 +28,7 @@ export const TECH_EVENTS = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
     rules: "",
     winning: "",
-    club: "",
+    club: "https://i.postimg.cc/wB17KJw6/Untitled-design-removebg-preview.png",
     coordinators: ""
   },
   {
