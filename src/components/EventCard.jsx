@@ -1,21 +1,22 @@
-import React from 'react'
+import React from 'react';
 
-const EventCard = () => {
+const EventCard = ({ event }) => {
   return (
-    
-      <main className='relative bg-[#161616]'>
-        <section className='relative flex mt-10 md:w-[1200px] md:h-[320px] '>
-        <div className='mt-6 ml-8'>
-             <h2 className='text-5xl font-bold text-white font-valorax'> EVENT</h2>
-             <h4 className='mt-2 text-2xl font-light text-[#B5B1B1] font-expletus-sans'>This is a event, you should definetely join, please join!!</h4>
-        </div>
-
-          <div style = {{background:"url('/images/eventcard.png') no-repeat center center/cover"}}className='absolute top-5 right-4 h-[280px] w-[280px]'></div>
-        </section>
-
-      </main>
-    
+    <div className='w-full rounded-lg border border-arcane-primary h-[130px] md:h-[300px] bg-[#161616] font-expletus-sans flex items-start justify-between'>
+      <article className='w-[65%] p-3 md:p-10'>
+        <h2 className='text-white font-valorax md:text-3xl'>
+          {event.name}
+        </h2>
+        <p className='md:text-md text-sm text-[#D3D3D3] mt-6 md:text-justify overflow-hidden line-clamp-2 md:line-clamp-3 text-ellipsis'>
+          {event.description}
+        </p>
+      </article>
+      <aside className='w-[35%] h-full relative rounded-r-lg'>
+        <img className='w-full h-full rounded-r-lg object-cover' src={event.img} alt={event.name} />
+        <div className="absolute rounded-r-lg inset-0 transition-opacity duration-300 bg-gradient-to-t from-arcane-primary to-transparent md:group-hover:opacity-60" />
+      </aside>
+    </div>
   )
 }
 
-export default EventCard
+export default EventCard;

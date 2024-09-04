@@ -86,14 +86,14 @@ const Home = () => {
             <div className='mt-16 z-20 relative'>
                 <Link to={'/'}>
                     <VelocityScroll 
-                        text={` - ${[...TECH_EVENTS].join(' - ')}`} 
+                        text={` - ${TECH_EVENTS.map(event => event.name).join(' - ')}`} 
                         default_velocity={1}
                         className={'md:text-6xl text-5xl font-valorax text-white hover:text-arcane-primary'}
                     />
                 </Link>
                 <Link to={'/'}>
                     <RevVelocityScroll
-                        text={` - ${[...NON_TECH_EVENTS].join(' - ')}`} 
+                        text={` - ${NON_TECH_EVENTS.map(event => event.name).join(' - ')}`} 
                         default_velocity={1}
                         className={'md:text-6xl text-5xl font-valorax text-white hover:text-arcane-primary'}
                     />

@@ -12,24 +12,144 @@ export const SPOTLIGHT = [
   { img: "https://i.postimg.cc/FHGM2d7G/11.webp", alt: "11" },
 ];
 
-export const TECH_EVENTS =[
-  "Capture the Flag",
-  "Miniathon",
-  "Paper Presentation",
-  "Tech Quiz",
-  "Promptopia",
-  "6ix",
-  "Figma Fiesta",
-  "Coding Contest"
+export const TECH_EVENTS = [
+  {
+    name: "Capture the Flag",
+    img: "https://i.postimg.cc/wvZjGmQS/DALL-E-2024-09-04-17-22-59-A-thrilling-and-futuristic-scene-featuring-characters-inspired-by-the-A.webp",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    club: "",
+    coordinators: ""
+  },
+  {
+    name: "Miniathon",
+    img: "https://i.postimg.cc/0j6s3YG7/DALL-E-2024-09-04-17-43-20-A-team-of-four-characters-inspired-by-the-Arcane-web-series-style-part.webp",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    club: "",
+    coordinators: ""
+  },
+  {
+    name: "Paper Presentation",
+    img: "https://i.postimg.cc/JzgMNdbM/DALL-E-2024-09-04-17-44-59-A-scene-featuring-a-team-of-two-characters-inspired-by-the-Arcane-web-s.webp",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    club: "",
+    coordinators: ""
+  },
+  {
+    name: "Promptopia",
+    img: "https://i.postimg.cc/RhYQvH37/DALL-E-2024-09-04-17-47-25-A-single-character-inspired-by-the-Arcane-web-series-style-working-on.webp",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    club: "",
+    coordinators: ""
+  },
+  {
+    name: "6ix",
+    img: "https://i.postimg.cc/FKbM19Vd/DALL-E-2024-09-04-17-54-55-An-intense-and-thrilling-scene-inspired-by-a-high-stakes-futuristic-es.webp",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    club: "",
+    coordinators: ""
+  },
+  {
+    name: "Tech Quiz",
+    img: "https://i.postimg.cc/hvQQb3jm/DALL-E-2024-09-04-17-50-29-A-scene-featuring-three-groups-each-with-two-characters-inspired-by-th.webp",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    club: "",
+    coordinators: ""
+  },
+  {
+    name: "Figma Fiesta",
+    img: "https://i.postimg.cc/vHRkbwbJ/DALL-E-2024-09-04-17-38-32-A-character-inspired-by-the-Arcane-web-series-style-working-on-web-des.webp",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    club: "",
+    coordinators: ""
+  },
+  {
+    name: "Coding Contest",
+    img: "https://i.postimg.cc/v8rGwTbF/DALL-E-2024-09-04-17-32-32-A-dynamic-and-futuristic-scene-featuring-characters-inspired-by-the-Arc.webp",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    club: "",
+    coordinators: ""
+  },
 ];
 
 export const NON_TECH_EVENTS = [
-  "Board Bully",
-  "Connexions",
-  "Twenty 20",
-  "Treasure Hunt",
-  "BGMI",
-  "Valorant",
-  "FIFA",
-  "Shutter Story"
+  {
+    name: "Board Bully",
+    img: "",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    coordinators: ""
+  },
+  {
+    name: "Connexions",
+    img: "",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    coordinators: ""
+  },
+  {
+    name: "Twenty 20",
+    img: "https://i.postimg.cc/44b6mxyG/DALL-E-2024-09-04-19-03-24-A-scene-inspired-by-the-Arcane-web-series-style-depicting-characters-p.webp",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    coordinators: ""
+  },
+  {
+    name: "Treasure Hunt",
+    img: "https://i.postimg.cc/TwG4DY8D/DALL-E-2024-09-04-19-17-10-A-scene-inspired-by-the-Arcane-web-series-style-depicting-a-group-of-c.webp",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    coordinators: ""
+  },
+  {
+    name: "BGMI",
+    img: "https://i.postimg.cc/Y9bmz8Px/DALL-E-2024-09-04-19-14-37-A-scene-inspired-by-the-Arcane-web-series-style-depicting-two-characte.webp",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    coordinators: ""
+  },
+  {
+    name: "Valorant",
+    img: "https://i.postimg.cc/xqrjvz9R/DALL-E-2024-09-04-19-15-19-A-scene-inspired-by-the-Arcane-web-series-style-depicting-two-characte.webp",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    coordinators: ""
+  },
+  {
+    name: "FIFA",
+    img: "https://i.postimg.cc/Z5bt1csN/DALL-E-2024-09-04-19-12-55-A-competitive-scene-inspired-by-the-Arcane-web-series-style-depicting.webp",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    coordinators: ""
+  },
+  {
+    name: "Shutter Story",
+    img: "",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
+    rules: "",
+    winning: "",
+    coordinators: ""
+  },
 ];

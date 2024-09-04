@@ -17,7 +17,7 @@ const Navbar = ({ openNav, setOpenNav }) => {
           <IoCloseSharp />
         </button>
       </div>
-      <div className="w-[150px]">
+      <div className="md:w-[150px]">
         <Link to={"/"} onClick={() => setOpenNav(!openNav)}>
           <img
             src={"/images/logo.png"}
