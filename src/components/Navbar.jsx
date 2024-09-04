@@ -34,7 +34,7 @@ const Navbar = ({ openNav, setOpenNav }) => {
             </Link>
           </li>
           <li className="hover:pb-2 transition-all duration-300 ease-out hover:text-[#858585]">
-            <Link to="/getallotrix" onClick={() => setOpenNav(!openNav)}>
+            <Link to="/events" onClick={() => setOpenNav(!openNav)}>
               Events
             </Link>
           </li>

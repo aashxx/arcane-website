@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Events from './pages/Events';
 import Cursor from './components/Cursor';
 import Footer from './components/Footer';
+import Technical from './pages/Technical';
+import NonTechnical from './pages/NonTechnical';
 
 const App = () => {
 
@@ -19,6 +21,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/events' element={<Events />} />
+        <Route path='/technical' element={<Technical />} />
+        <Route path='/nontechnical' element={<NonTechnical />} />
         
       </Routes>
       <Footer />
