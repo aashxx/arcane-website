@@ -8,6 +8,8 @@ import { NON_TECH_EVENTS, SPOTLIGHT, TECH_EVENTS } from '../utils/constants';
 import { VelocityScroll } from '@/components/magicui/scroll-based-velocity';
 import { RevVelocityScroll } from '@/components/magicui/rev-scroll-based-velocity';
 import { Link } from 'react-router-dom';
+import BlurIn from '@/components/magicui/blur-in';
+import BoxReveal from '@/components/magicui/box-reveal';
 
 const Home = () => {
   return (
@@ -25,19 +27,20 @@ const Home = () => {
                     </AnimatedShinyText>
                 </div>
             </div>
-            <h1 className='text-white text-5xl md:text-6xl font-valorax text-center'>
-                Code the Impossible
-            </h1>
+            <BlurIn 
+                word={'Code the Impossible'} 
+                className={'text-white text-5xl md:text-6xl font-valorax text-center'} 
+            />
             <p className='text-white text-center text-md font-medium'>
                 Welcome to Arcane, Our department's National Level Technical Symposium
             </p>
             <div className='flex items-center gap-4 mt-4'>
                 <button className='rounded-lg bg-gradient-to-r from-[#DD7C8D] to-[#80EAF9] text-white p-[1px]'>
-                    <div className='bg-arcane-primary py-2 px-14 rounded-lg'>
+                    <div className='bg-arcane-primary hover:bg-white hover:text-arcane-primary py-2 px-14 transition-all duration-300 ease-out rounded-lg'>
                         Explore
                     </div>
                 </button>
-                <button className='rounded-lg bg-black border border-black text-white py-2 px-14'>
+                <button className='rounded-lg hover:bg-white hover:text-black bg-black border border-black text-white py-2 px-14 transition-all duration-300 ease-out'>
                     Register
                 </button>
             </div>
@@ -61,15 +64,8 @@ const Home = () => {
                 <h3 className='text-white px-4 font-valorax text-2xl md:text-4xl text-center'>
                     Meet the <span className='text-arcane-primary'>Executive</span> Board
                 </h3>
-                <aside className='overflow-x-hidden mt-8 md:block hidden'>
+                <aside className='overflow-x-hidden mt-8'>
                     <SpotLight />
-                </aside>
-                <aside className='overflow-x-scroll mt-8 flex items-center gap-4 md:hidden'>
-                    {
-                        SPOTLIGHT.map((img) => (
-                            <img className='rounded-lg w-[165px] h-[231px] object-cover' src={img.img} alt={img.alt} />
-                        ))
-                    }
                 </aside>
             </div>
             <div className="h-64 w-96 bg-arcane-primary absolute md:-left-24 z-10 rounded-full blur-[150px] hidden md:block" />
@@ -106,18 +102,26 @@ const Home = () => {
         </section>
         <section className='md:py-16 py-10 md:px-32 px-4 bg-white flex gap-10 flex-col-reverse md:flex-row'>
             <div className='md:w-[50%] w-full flex flex-col gap-5 items-center md:items-start px-4'>
-                <h2 className='text-4xl text-center md:text-left text-arcane-primary font-valorax'>
-                    We are Arcane
-                </h2>
-                <p className='text-justify'>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum est repellendus, quidem maxime, rem provident tempore quas, accusantium sit nesciunt facilis illum numquam. Labore harum quam cumque possimus dolor odio delectus magni eum quod non ipsa aperiam reiciendis repellat perspiciatis perferendis voluptate corporis, totam ea aspernatur quidem ullam inventore. Ducimus.
-                </p>
-                <p className='text-justify'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in, maiores consectetur quaerat at deleniti eveniet asperiores. Magni ipsa, iusto quia aspernatur dignissimos obcaecati temporibus!
-                </p>
-                <button className='px-10 py-2 text-white bg-arcane-primary mt-5 z-20'>
-                    Register Now
-                </button>
+                <BoxReveal duration={0.5} boxColor={'#9E325F'}>
+                    <h2 className='text-4xl text-center md:text-left text-arcane-primary font-valorax'>
+                        We are Arcane
+                    </h2>
+                </BoxReveal>
+                <BoxReveal duration={0.5} boxColor={'#9E325F'}>
+                    <p className='text-justify'>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum est repellendus, quidem maxime, rem provident tempore quas, accusantium sit nesciunt facilis illum numquam. Labore harum quam cumque possimus dolor odio delectus magni eum quod non ipsa aperiam reiciendis repellat perspiciatis perferendis voluptate corporis, totam ea aspernatur quidem ullam inventore. Ducimus.
+                    </p>
+                </BoxReveal>
+                <BoxReveal duration={0.5} boxColor={'#9E325F'}>
+                    <p className='text-justify'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in, maiores consectetur quaerat at deleniti eveniet asperiores. Magni ipsa, iusto quia aspernatur dignissimos obcaecati temporibus!
+                    </p>
+                </BoxReveal>
+                <BoxReveal duration={0.5} boxColor={'#9E325F'}>
+                    <button className='px-10 py-2 text-white bg-arcane-primary mt-5 z-20'>
+                        Register Now
+                    </button>
+                </BoxReveal>
             </div>
             <div className='rounded-lg bg-arcane-primary w-full md:w-[50%]'>
             </div>
