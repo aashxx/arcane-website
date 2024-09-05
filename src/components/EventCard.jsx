@@ -16,18 +16,23 @@ const EventCard = ({ event }) => {
         <p className='text-[12px] md:text-[16px] text-[gray] mt-1 md:mt-5 md:text-justify overflow-hidden line-clamp-2 md:line-clamp-3 text-ellipsis'>
           {event.description}
         </p>
-        <div className='flex justify-between items-center mt-10'>
+        <div className='justify-between items-center mt-10 md:flex hidden'>
           <Link to={`/events/${eventType}/${event.name}`} className='px-10 py-2 text-white text-md bg-arcane-primary rounded-md'>
             View More
           </Link>
           {
             event.club && (
-              <aside className='text-white flex items-center gap-3'>
+              <aside className='text-white items-center gap-3 flex w-[205px]'>
                 Powered By 
-                <img className='max-w-[50px]' src={event.club} alt="AV" />
+                <img className={`${event.club === "https://i.postimg.cc/wB17KJw6/Untitled-design-removebg-preview.png" || event.club === "https://i.postimg.cc/ydJbjy49/Untitled-design-1-removebg-preview-1.png" ? 'max-w-[50px]' : 'max-w-[100px]'}`} src={event.club} alt="AV" />
               </aside>
             )
           }
+        </div>
+        <div className='mt-2 md:hidden'>
+          <Link to={`/events/${eventType}/${event.name}`} className='text-arcane-primary text-sm active:text-white active:underline'>
+            View More
+          </Link>
         </div>
       </article>
       <aside className='w-[35%] h-full relative rounded-r-lg'>
