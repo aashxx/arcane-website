@@ -19,7 +19,7 @@ export const TECH_EVENTS = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
     rules: "",
     winning: "",
-    club: "https://i.postimg.cc/Z5Zzqp8x/logoai-CCSC1.png",
+    club: "https://i.postimg.cc/KY1Y7Wgn/Untitled-design-4-1-removebg-preview.png",
     coordinators: ""
   },
   {
@@ -28,7 +28,7 @@ export const TECH_EVENTS = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
     rules: "",
     winning: "",
-    club: "https://i.postimg.cc/wB17KJw6/Untitled-design-removebg-preview.png",
+    club: "https://i.postimg.cc/CLwLr5qM/Untitled-design-removebg-preview.png",
     coordinators: ""
   },
   {
@@ -37,16 +37,16 @@ export const TECH_EVENTS = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
     rules: "",
     winning: "",
-    club: "https://i.postimg.cc/bwpbRYc9/Untitled-design-2-1-removebg-preview.png",
+    club: "https://i.postimg.cc/W4x157Mx/Untitled-design-1-1-removebg-preview.png",
     coordinators: ""
   },
   {
-    name: "6ix",
+    name: "Sector 6ix",
     img: "https://i.postimg.cc/FKbM19Vd/DALL-E-2024-09-04-17-54-55-An-intense-and-thrilling-scene-inspired-by-a-high-stakes-futuristic-es.webp",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
     rules: "",
     winning: "",
-    club: "https://i.postimg.cc/G9wzqPL7/Open-Source-Club-Logo.png",
+    club: "https://i.postimg.cc/pVzp13cC/Untitled-design-3-1-removebg-preview.png",
     coordinators: ""
   },
   {
@@ -64,7 +64,7 @@ export const TECH_EVENTS = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
     rules: "",
     winning: "",
-    club: "https://i.postimg.cc/rstQ1ZkR/neural-techgenix-club-high-resolution-logo-transparent.png",
+    club: "https://i.postimg.cc/BQCtJH01/Untitled-design-2-1-removebg-preview.png",
     coordinators: ""
   },
   {
@@ -143,40 +143,32 @@ export const NON_TECH_EVENTS = [
     rules: "",
     winning: "",
     coordinators: ""
-  },
-  {
-    name: "Shutter Story",
-    img: "",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit cum provident maiores blanditiis. Est minima impedit officia quas dolorem sed nihil cupiditate. Accusamus eum laborum delectus nemo temporibus libero iure inventore illo perferendis reprehenderit ab expedita facere tenetur, corporis quod veniam ducimus, recusandae ad odit velit perspiciatis! Fugit officia qui facilis similique. Cupiditate, quos?",
-    rules: "",
-    winning: "",
-    coordinators: ""
-  },
+  }
 ];
 
 export const CLUB_CARDS = [
   {
-    img: "https://i.postimg.cc/k5YJ2yFb/DALL-E-2024-09-05-12-43-06-A-digital-artwork-inspired-by-the-Arcane-series-featuring-a-design-for.webp",
+    img: "https://i.postimg.cc/KY1Y7Wgn/Untitled-design-4-1-removebg-preview.png",
     name: "Crescent Cybertronics Security Club",
   },
   {
-    img: "https://i.postimg.cc/XqpnKBLz/DALL-E-2024-09-05-13-01-23-A-digital-artwork-inspired-by-the-Arcane-series-featuring-a-single-cha.webp",
+    img: "https://i.postimg.cc/VkWNQLvg/Untitled-design-1-1-removebg-preview-1.png",
     name: "CSE Coding Club",
   },
   {
-    img: "https://i.postimg.cc/6pyG7J7r/DALL-E-2024-09-05-13-27-44-A-digital-artwork-inspired-by-the-Arcane-series-featuring-two-characte.webp",
+    img: "https://i.postimg.cc/W4x157Mx/Untitled-design-1-1-removebg-preview.png",
     name: "Crescent Data Science Club",
   },
   {
-    img: "https://i.postimg.cc/W1XDhqyd/DALL-E-2024-09-05-13-25-15-A-digital-artwork-inspired-by-the-Arcane-series-featuring-two-decent-c.webp",
+    img: "https://i.postimg.cc/pVzp13cC/Untitled-design-3-1-removebg-preview.png",
     name: "Open Source Club",
   },
   {
-    img: "https://i.postimg.cc/hGcgy5Mx/DALL-E-2024-09-05-12-47-13-A-digital-artwork-inspired-by-the-Arcane-series-featuring-a-design-for.webp",
+    img: "https://i.postimg.cc/ydJbjy49/Untitled-design-1-removebg-preview-1.png",
     name: "IoT Club",
   },
   {
-    img: "https://i.postimg.cc/W3fv4bV6/DALL-E-2024-09-05-12-44-31-A-digital-artwork-inspired-by-the-Arcane-series-featuring-a-design-for.webp",
+    img: "https://i.postimg.cc/BQCtJH01/Untitled-design-2-1-removebg-preview.png",
     name: "Neural Techgenix Club",
   }
 ];

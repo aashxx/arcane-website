@@ -26,7 +26,7 @@ const EventCard = ({ event }) => {
             event.club && (
               <aside className='text-white items-center gap-3 flex w-[205px]'>
                 Powered By 
-                <img className={`${event.club === "https://i.postimg.cc/wB17KJw6/Untitled-design-removebg-preview.png" || event.club === "https://i.postimg.cc/ydJbjy49/Untitled-design-1-removebg-preview-1.png" ? 'max-w-[50px]' : 'max-w-[100px]'}`} src={event.club} alt="AV" />
+                <img className={`${event.club === "https://i.postimg.cc/CLwLr5qM/Untitled-design-removebg-preview.png" || event.club === "https://i.postimg.cc/ydJbjy49/Untitled-design-1-removebg-preview-1.png" ? 'max-w-[50px]' : 'max-w-[100px]'}`} src={event.club} alt="AV" />
               </aside>
             )
           }
