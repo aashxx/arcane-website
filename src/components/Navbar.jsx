@@ -39,20 +39,19 @@ const Navbar = ({ openNav, setOpenNav }) => {
             </Link>
           </li>
           <li className="hover:pb-2 transition-all duration-300 ease-out hover:text-[#858585]">
-            <Link to="/faqs" onClick={() => setOpenNav(!openNav)}>
+            <Link to="/clubs" onClick={() => setOpenNav(!openNav)}>
               Clubs
             </Link>
           </li>
           <li className="hover:pb-2 transition-all duration-300 ease-out md:border-r md:border-r-[white] md:pr-10 hover:text-[#858585]">
-            {" "}
             <Link to="/contact" onClick={() => setOpenNav(!openNav)}>
               Contact
             </Link>
           </li>
         </ul>
         <div className="bg-arcane-primary font-expletus-sans font-light py-2 px-8 border border-arcane-primary rounded-lg text-[white] transition-all duration-300 ease-out hover:bg-[#161616]">
-            <Link to="/signup" onClick={() => setOpenNav(!openNav)}>
-                Register
+            <Link to="/register" onClick={() => setOpenNav(!openNav)}>
+              Register
             </Link>
         </div>
       </div>

@@ -9,6 +9,12 @@ import Footer from './components/Footer';
 import Technical from './pages/Technical';
 import NonTechnical from './pages/NonTechnical';
 import Contact from './pages/Contact';
+import Clubs from './pages/Clubs';
+import { Toaster } from 'react-hot-toast';
+import EventDetails from './pages/EventDetails';
+import ClubDetails from './pages/ClubDetails';
+import Register from './pages/Register';
+import NotFound from './pages/NotFound';
 
 const App = () => {
 
@@ -24,9 +30,16 @@ const App = () => {
         <Route path='/events' element={<Events />} />
         <Route path='/events/technical-events' element={<Technical />} />
         <Route path='/events/non-technical-events' element={<NonTechnical />} />
+        <Route path='/events/technical-events/:eventName' element={<EventDetails />} />
+        <Route path='/events/non-technical-events/:eventName' element={<EventDetails />} />
+        <Route path='/clubs' element={<Clubs />} />
+        <Route path='/clubs/:clubName' element={<ClubDetails />} />
+        <Route path='/register' element={<Register />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
+      <Toaster />
     </Router>
   )
 }
