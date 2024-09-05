@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { ANIMATIONS } from '@/utils/constants';
 
 const EventCard = ({ event }) => {
 
@@ -8,7 +10,7 @@ const EventCard = ({ event }) => {
   const eventType = pathParts[2];
 
   return (
-    <div className='w-full rounded-lg border border-arcane-primary h-[130px] md:h-[300px] bg-[#161616] font-expletus-sans flex items-start justify-between'>
+    <motion.div {...ANIMATIONS.up} className='w-full rounded-lg border border-arcane-primary h-[130px] md:h-[300px] bg-[#161616] font-expletus-sans flex items-start justify-between'>
       <article className='w-[65%] p-3 md:p-10'>
         <h2 className='text-white font-valorax md:text-3xl'>
           {event.name}
@@ -39,7 +41,7 @@ const EventCard = ({ event }) => {
         <img className='w-full h-full rounded-r-lg object-cover' src={event.img} alt={event.name} />
         <div className="absolute rounded-r-lg inset-0 transition-opacity duration-300 bg-gradient-to-t from-arcane-primary to-transparent md:group-hover:opacity-60" />
       </aside>
-    </div>
+    </motion.div>
   )
 }
 

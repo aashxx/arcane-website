@@ -14,7 +14,7 @@ import BoxReveal from '@/components/magicui/box-reveal';
 const Home = () => {
   return (
     <main className='relative bg-arcane-primary font-expletus-sans'>
-        <section style={{ background: "url('/images/hero.png') no-repeat center center/cover"}} className='md:h-screen pt-32 w-full px-4 flex flex-col items-center gap-5'>
+        <section style={{ background: "url('/images/hero.png') no-repeat center center/cover"}} className='md:h-screen pt-32 w-full px-4 flex flex-col justify-center items-center gap-5'>
             <div className="z-10 flex items-center justify-center mb-16">
                 <div
                     className={cn(
@@ -29,7 +29,7 @@ const Home = () => {
             </div>
             <BlurIn 
                 word={'Code the Impossible'} 
-                className={'text-white text-5xl md:text-6xl font-valorax text-center'} 
+                className={'text-white text-5xl md:text-6xl 2xl:text-8xl font-valorax text-center'} 
             />
             <p className='text-white text-center text-md font-medium'>
                 Welcome to Arcane, Our department's National Level Technical Symposium
@@ -62,7 +62,7 @@ const Home = () => {
             <div className="h-64 w-96 bg-arcane-primary absolute md:-right-24 z-10 rounded-full blur-[150px]" />
             <div className='relative mt-10 z-20'>
                 <h3 className='text-white px-4 font-valorax text-2xl md:text-4xl text-center'>
-                    Meet the <span className='text-arcane-primary'>Executive</span> Board
+                    Previous <span className='text-arcane-primary'>Arcane</span> Glimpses
                 </h3>
                 <aside className='overflow-x-hidden mt-8'>
                     <SpotLight />

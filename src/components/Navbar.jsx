@@ -45,7 +45,7 @@ const Navbar = ({ openNav, setOpenNav }) => {
           </li>
           <li className="hover:pb-2 transition-all duration-300 ease-out md:border-r md:border-r-[white] md:pr-10 hover:text-[#858585]">
             {" "}
-            <Link to="/pricing" onClick={() => setOpenNav(!openNav)}>
+            <Link to="/contact" onClick={() => setOpenNav(!openNav)}>
               Contact
             </Link>
           </li>

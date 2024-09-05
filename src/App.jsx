@@ -8,6 +8,7 @@ import Cursor from './components/Cursor';
 import Footer from './components/Footer';
 import Technical from './pages/Technical';
 import NonTechnical from './pages/NonTechnical';
+import Contact from './pages/Contact';
 
 const App = () => {
 
@@ -23,7 +24,7 @@ const App = () => {
         <Route path='/events' element={<Events />} />
         <Route path='/events/technical-events' element={<Technical />} />
         <Route path='/events/non-technical-events' element={<NonTechnical />} />
-        
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
