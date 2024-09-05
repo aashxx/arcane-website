@@ -53,7 +53,7 @@ const Contact = () => {
                             </p>
                         </a>
                     </aside>
-                    <h3 className='text-2xl mt-8 font-bold font-expletus-sans text-white mb-4'>
+                    <h3 className='text-2xl mt-5 font-bold font-expletus-sans text-white mb-4'>
                         Social Links
                     </h3>
                     <aside className='flex justify-between items-center text-2xl font-expletus-sans px-10 py-6 rounded-md bg-[#252526] w-[370px] md:w-[400px]'>

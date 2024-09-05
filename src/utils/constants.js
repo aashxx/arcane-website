@@ -154,6 +154,33 @@ export const NON_TECH_EVENTS = [
   },
 ];
 
+export const CLUB_CARDS = [
+  {
+    img: "https://i.postimg.cc/k5YJ2yFb/DALL-E-2024-09-05-12-43-06-A-digital-artwork-inspired-by-the-Arcane-series-featuring-a-design-for.webp",
+    name: "Crescent Cybertronics Security Club",
+  },
+  {
+    img: "https://i.postimg.cc/XqpnKBLz/DALL-E-2024-09-05-13-01-23-A-digital-artwork-inspired-by-the-Arcane-series-featuring-a-single-cha.webp",
+    name: "CSE Coding Club",
+  },
+  {
+    img: "https://i.postimg.cc/6pyG7J7r/DALL-E-2024-09-05-13-27-44-A-digital-artwork-inspired-by-the-Arcane-series-featuring-two-characte.webp",
+    name: "Crescent Data Science Club",
+  },
+  {
+    img: "https://i.postimg.cc/W1XDhqyd/DALL-E-2024-09-05-13-25-15-A-digital-artwork-inspired-by-the-Arcane-series-featuring-two-decent-c.webp",
+    name: "Open Source Club",
+  },
+  {
+    img: "https://i.postimg.cc/hGcgy5Mx/DALL-E-2024-09-05-12-47-13-A-digital-artwork-inspired-by-the-Arcane-series-featuring-a-design-for.webp",
+    name: "IoT Club",
+  },
+  {
+    img: "https://i.postimg.cc/W3fv4bV6/DALL-E-2024-09-05-12-44-31-A-digital-artwork-inspired-by-the-Arcane-series-featuring-a-design-for.webp",
+    name: "Neural Techgenix Club",
+  }
+];
+
 export const ANIMATIONS = {
   left: {
     initial: {
