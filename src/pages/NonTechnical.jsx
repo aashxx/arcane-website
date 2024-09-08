@@ -5,7 +5,7 @@ import BlurIn from "@/components/magicui/blur-in";
 
 const NonTechnical = () => {
   return (
-    <main className="relative bg-black min-h-screen w-full md:px-[unset]">
+    <main className="relative bg-black min-h-screen w-full">
       <section className="relative w-full h-[40vh] md:h-[50vh] bg-arcane-primary">
         <div style={{ background: "url('/images/non-tech-banner.png') no-repeat center center/cover", filter: "grayscale(100%)" }} className="absolute inset-0 opacity-60 bg-arcane-primary" />
         <BlurIn

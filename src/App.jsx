@@ -15,6 +15,7 @@ import EventDetails from './pages/EventDetails';
 import ClubDetails from './pages/ClubDetails';
 import Register from './pages/Register';
 import NotFound from './pages/NotFound';
+import RegisterState from './contexts/RegisterContext';
 
 const App = () => {
 
@@ -22,24 +23,26 @@ const App = () => {
 
   return (
     <Router>
-      <Cursor />
-      <MobileNavbar openNav={openNav} setOpenNav={setOpenNav} />
-      <Navbar openNav={openNav} setOpenNav={setOpenNav} />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/events' element={<Events />} />
-        <Route path='/events/technical-events' element={<Technical />} />
-        <Route path='/events/non-technical-events' element={<NonTechnical />} />
-        <Route path='/events/technical-events/:eventName' element={<EventDetails />} />
-        <Route path='/events/non-technical-events/:eventName' element={<EventDetails />} />
-        <Route path='/clubs' element={<Clubs />} />
-        <Route path='/clubs/:clubName' element={<ClubDetails />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
-      <Footer />
-      <Toaster />
+      <RegisterState>
+        <Cursor />
+        <MobileNavbar openNav={openNav} setOpenNav={setOpenNav} />
+        <Navbar openNav={openNav} setOpenNav={setOpenNav} />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/events' element={<Events />} />
+          <Route path='/events/technical-events' element={<Technical />} />
+          <Route path='/events/non-technical-events' element={<NonTechnical />} />
+          <Route path='/events/technical-events/:eventName' element={<EventDetails />} />
+          <Route path='/events/non-technical-events/:eventName' element={<EventDetails />} />
+          <Route path='/clubs' element={<Clubs />} />
+          <Route path='/clubs/:clubName' element={<ClubDetails />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+        <Footer />
+        <Toaster />
+      </RegisterState>
     </Router>
   )
 }

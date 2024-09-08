@@ -16,9 +16,6 @@ const Clubs = () => {
               <Link to={`/clubs/${club.name}`} className="relative flex w-full max-h-hull items-center justify-start group">
                 <img src={club.img} alt={club.name} className="w-full h-[150px] rounded-lg object-contain" />
                 <div className="absolute inset-0 transition-opacity duration-300 rounded-lg opacity-0 bg-gradient-to-t from-arcane-primary to-transparent md:group-hover:opacity-60" />
-                {/* <h4 className="absolute z-10 text-2xl md:px-2 text-white md:opacity-0 transition-opacity duration-300 font-valorax bottom-4 left-4 md:group-hover:opacity-100">
-                  {club.name}
-                </h4> */}
               </Link>
             </motion.div>
           ))
