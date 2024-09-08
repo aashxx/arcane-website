@@ -35,14 +35,14 @@ const Home = () => {
                 Welcome to Arcane, Our department's National Level Technical Symposium
             </p>
             <div className='flex items-center gap-4 mt-4'>
-                <button className='rounded-lg bg-gradient-to-r from-[#DD7C8D] to-[#80EAF9] text-white p-[1px]'>
+                <Link to={'/events'} className='rounded-lg bg-gradient-to-r from-[#DD7C8D] to-[#80EAF9] text-white p-[1px]'>
                     <div className='bg-arcane-primary hover:bg-white hover:text-arcane-primary py-2 px-14 transition-all duration-300 ease-out rounded-lg'>
                         Explore
                     </div>
-                </button>
-                <button className='rounded-lg hover:bg-white hover:text-black bg-black border border-black text-white py-2 px-14 transition-all duration-300 ease-out'>
+                </Link>
+                <Link to={'/register'} className='rounded-lg hover:bg-white hover:text-black bg-black border border-black text-white py-2 px-14 transition-all duration-300 ease-out'>
                     Register
-                </button>
+                </Link>
             </div>
             <div className='mt-6'>
                 <h4 className='text-white text-center text-xl font-medium'>
@@ -75,9 +75,9 @@ const Home = () => {
                     Technical & <br /><span className='text-black'>Non</span> Technical Events
                 </h3>
                 <aside className='flex md:justify-between justify-center items-center mt-6'>
-                    <button className='px-10 py-2 text-white bg-black z-20'>
+                    <a href={'/register'} className='px-10 py-2 text-white bg-black z-20'>
                         Register Now
-                    </button>
+                    </a>
                     <button className='px-14 text-2xl hidden md:block mr-10 py-2 text-white bg-[#18181B] z-30 rounded-lg font-valorax'>
                         2 days
                     </button>
@@ -118,9 +118,9 @@ const Home = () => {
                     </p>
                 </BoxReveal>
                 <BoxReveal duration={0.5} boxColor={'#9E325F'}>
-                    <button className='px-10 py-2 text-white bg-arcane-primary mt-5 z-20'>
+                    <a href='/register' className='px-10 py-2 text-white bg-arcane-primary mt-5 z-20'>
                         Register Now
-                    </button>
+                    </a>
                 </BoxReveal>
             </div>
             <div className='rounded-lg bg-arcane-primary w-full md:w-[50%]'>

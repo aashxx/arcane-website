@@ -31,22 +31,22 @@ const Footer = () => {
               <h3 className="font-bold text-lg text-arcane-primary">Overview</h3>
               <ul className="text-gray-400 space-y-1">
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a href="/" className="hover:text-white">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a href="/events" className="hover:text-white">
                     Events
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a href="/clubs" className="hover:text-white">
                     Clubs
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a href="/register" className="hover:text-white">
                     Register
                   </a>
                 </li>
