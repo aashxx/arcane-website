@@ -16,6 +16,8 @@ import ClubDetails from './pages/ClubDetails';
 import Register from './pages/Register';
 import NotFound from './pages/NotFound';
 import RegisterState from './contexts/RegisterContext';
+import PaymentState from './contexts/PaymentContext';
+import ProtectedAdmin from './admin/pages/ProtectedAdmin';
 
 const App = () => {
 
@@ -24,24 +26,27 @@ const App = () => {
   return (
     <Router>
       <RegisterState>
-        <Cursor />
-        <MobileNavbar openNav={openNav} setOpenNav={setOpenNav} />
-        <Navbar openNav={openNav} setOpenNav={setOpenNav} />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/events' element={<Events />} />
-          <Route path='/events/technical-events' element={<Technical />} />
-          <Route path='/events/non-technical-events' element={<NonTechnical />} />
-          <Route path='/events/technical-events/:eventName' element={<EventDetails />} />
-          <Route path='/events/non-technical-events/:eventName' element={<EventDetails />} />
-          <Route path='/clubs' element={<Clubs />} />
-          <Route path='/clubs/:clubName' element={<ClubDetails />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
-        <Footer />
-        <Toaster />
+        <PaymentState>
+          <Cursor />
+          <MobileNavbar openNav={openNav} setOpenNav={setOpenNav} />
+          <Navbar openNav={openNav} setOpenNav={setOpenNav} />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/events' element={<Events />} />
+            <Route path='/events/technical-events' element={<Technical />} />
+            <Route path='/events/non-technical-events' element={<NonTechnical />} />
+            <Route path='/events/technical-events/:eventName' element={<EventDetails />} />
+            <Route path='/events/non-technical-events/:eventName' element={<EventDetails />} />
+            <Route path='/clubs' element={<Clubs />} />
+            <Route path='/clubs/:clubName' element={<ClubDetails />} />
+            <Route path='/register' element={<Register />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/arcane-administrator' element={<ProtectedAdmin />} />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+          <Footer />
+          <Toaster />
+        </PaymentState>
       </RegisterState>
     </Router>
   )

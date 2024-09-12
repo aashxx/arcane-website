@@ -43,6 +43,10 @@ const RegisterState = ({ children }) => {
           toast.error("All personal details are required");
           return false;
         }
+        if(!/^\d{10}$/.test(participant.phone)) {
+            toast.error("Invalid phone number");
+            return false;
+        }
         if (!participant.emailVerified) {
           toast.error("Email not verified");
           return false;
@@ -67,36 +71,42 @@ const RegisterState = ({ children }) => {
         return price;
     };
 
-    const confirmParticipantRegistration = async () => {
+    const confirmParticipantRegistration = async (request) => {
         try {
             setLoading(true);
-            await axios.post("https://arcane-website-backend.vercel.app/api/registration/confirm-registration", { participant }, {
+            await axios.post("https://arcane-website-backend.vercel.app/api/registration/confirm-registration", { participant: request }, {
                 headers: {
                     "Content-Type": "application/json"
                 }
             });
-            toast.success("Registration Successfull");
+            toast.success("Registration Successful");
         } catch (error) {
             toast.error("Registration Failed");
             console.error("Error registering participant", error);
         } finally {
-            setParticipant({
-                fullName: "",
-                college: "",
-                email: "",
-                phone: "",
-                degree: "",
-                year: "",
-                food: "No",
-                emailVerified: false,
-                events: []
+            setLoading(false);
+        }
+    }
+
+    const rejectParticipantRegistration = async (request) => {
+        try {
+            setLoading(true);
+            await axios.post("https://arcane-website-backend.vercel.app/api/registration/reject-registration", { participant: request }, {
+                headers: {
+                    "Content-Type": "application/json"
+                }
             });
+            toast.success("Rejection Successful");
+        } catch (error) {
+            toast.error("Rejected Failed");
+            console.error("Error rejecting participant", error);
+        } finally {
             setLoading(false);
         }
     }
 
     return (
-        <RegisterContext.Provider value={{ participant, setParticipant, calculatePrice, confirmParticipantRegistration, loading, setLoading, formatTime, validatePersonalDetails }}>
+        <RegisterContext.Provider value={{ participant, setParticipant, calculatePrice, confirmParticipantRegistration, rejectParticipantRegistration, loading, setLoading, formatTime, validatePersonalDetails }}>
             {children}
         </RegisterContext.Provider>
     )

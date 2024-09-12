@@ -86,7 +86,7 @@ export const TECH_EVENTS = [
 export const NON_TECH_EVENTS = [
   {
     "name": "Board Bully",
-    "img": "",
+    "img": "https://i.postimg.cc/zBhsW7h4/DALL-E-2024-09-10-23-49-18-A-thrilling-scene-featuring-characters-from-the-Arcane-series-playing-a.webp",
     "description": "A fast-paced board game challenge where participants outwit their opponents to win.",
     "startTime": "09:15",
     "endTime": "10:15",
@@ -94,7 +94,7 @@ export const NON_TECH_EVENTS = [
   },
   {
     "name": "Connexions",
-    "img": "",
+    "img": "https://i.postimg.cc/NFwWxX7F/DALL-E-2024-09-10-23-46-37-A-vibrant-and-engaging-scene-featuring-characters-from-the-Arcane-serie.webp",
     "description": "A fun-filled puzzle event where participants solve brain teasers and logic puzzles. The event has two rounds.",
     "startTime": "10:15",
     "endTime": "11:15",
@@ -156,26 +156,32 @@ export const NON_TECH_EVENTS = [
 
 export const CLUB_CARDS = [
   {
+    img0: "https://i.postimg.cc/PrkCLf95/DALL-E-2024-09-11-00-00-52-A-detailed-futuristic-cyberpunk-inspired-depiction-of-the-Crescent-C.webp",
     img: "https://i.postimg.cc/KY1Y7Wgn/Untitled-design-4-1-removebg-preview.png",
     name: "Crescent Cybertronics Security Club",
   },
   {
+    img0: "https://i.postimg.cc/tR61Cnrc/DALL-E-2024-09-11-00-02-35-A-futuristic-and-high-tech-depiction-of-the-CSE-Coding-Club-featuring.webp",
     img: "https://i.postimg.cc/VkWNQLvg/Untitled-design-1-1-removebg-preview-1.png",
     name: "CSE Coding Club",
   },
   {
+    img0: "https://i.postimg.cc/wMD3Wnyz/DALL-E-2024-09-11-00-08-19-A-unique-futuristic-depiction-of-the-Data-Science-Club-featuring-Arc.webp",
     img: "https://i.postimg.cc/W4x157Mx/Untitled-design-1-1-removebg-preview.png",
     name: "Crescent Data Science Club",
   },
   {
+    img0: "https://i.postimg.cc/k40Bv75w/DALL-E-2024-09-11-00-10-14-A-futuristic-depiction-of-the-Open-Source-Club-featuring-two-Arcane-c.webp",
     img: "https://i.postimg.cc/pVzp13cC/Untitled-design-3-1-removebg-preview.png",
     name: "Open Source Club",
   },
   {
+    img0: "https://i.postimg.cc/s20B1Ydk/DALL-E-2024-09-11-00-04-11-A-futuristic-high-tech-depiction-of-the-Io-T-Club-featuring-multiple.webp",
     img: "https://i.postimg.cc/ydJbjy49/Untitled-design-1-removebg-preview-1.png",
     name: "IoT Club",
   },
   {
+    img0: "https://i.postimg.cc/tTZs6s9Y/DALL-E-2024-09-11-00-11-08-A-futuristic-and-tech-centric-depiction-of-the-Neural-Techgenix-Club.webp",
     img: "https://i.postimg.cc/BQCtJH01/Untitled-design-2-1-removebg-preview.png",
     name: "Neural Techgenix Club",
   }

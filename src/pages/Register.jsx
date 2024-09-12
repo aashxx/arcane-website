@@ -6,7 +6,7 @@ import { NON_TECH_EVENTS, TECH_EVENTS } from '@/utils/constants';
 import { Link } from 'react-router-dom';
 import { RegisterContext } from '../contexts/RegisterContext'; 
 import { AlertDialog, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, AlertDialogAction } from "@/components/ui/alert-dialog";
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import { InputOTP, InputOTPGroup, InputOTPSlot } from "@/components/ui/input-otp";
 import { FaCheck } from "react-icons/fa";
@@ -17,10 +17,11 @@ import Loader from '@/components/Loader';
 import { Checkbox } from '@/components/ui/checkbox';
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import dayjs from 'dayjs';
+import Payment from '@/components/Payment';
 
 const Register = () => {
 
-  const { participant, setParticipant, loading, setLoading, formatTime, calculatePrice, confirmParticipantRegistration, validatePersonalDetails } = useContext(RegisterContext);  
+  const { participant, setParticipant, loading, setLoading, formatTime, calculatePrice, validatePersonalDetails } = useContext(RegisterContext);  
 
   const [otp, setOtp] = useState("");
   const [timer, setTimer] = useState(20);
@@ -417,9 +418,14 @@ const Register = () => {
                     </div>
 
                     <DrawerFooter className="mt-8">
-                      <button onClick={confirmParticipantRegistration} className='px-12 py-2 bg-arcane-primary border border-arcane-primary hover:bg-transparent hover:text-arcane-primary transition-all duration-300 ease-out text-white rounded-md'>
-                        Pay
-                      </button>
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <button className='px-12 py-2 bg-arcane-primary border border-arcane-primary hover:bg-transparent hover:text-arcane-primary transition-all duration-300 ease-out text-white rounded-md'>
+                            Pay
+                          </button>
+                        </DialogTrigger>
+                        <Payment />
+                      </Dialog>
                       <DrawerClose asChild>
                         <Button variant="outline" className="border-arcane-primary text-arcane-primary hover:text-arcane-primary px-12 py-2 text-md">Close</Button>
                       </DrawerClose>
@@ -428,9 +434,14 @@ const Register = () => {
                 </DrawerContent>
               </Drawer>
             </div>
-            <button onClick={confirmParticipantRegistration} className='text-white px-12 py-2 bg-arcane-primary border border-arcane-primary hover:bg-white hover:text-arcane-primary transition-all duration-300 ease-out rounded-md'>
-              Pay
-            </button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <button className='text-white px-12 py-2 bg-arcane-primary border border-arcane-primary hover:bg-white hover:text-arcane-primary transition-all duration-300 ease-out rounded-md'>
+                  Pay
+                </button>
+              </DialogTrigger>
+              <Payment />
+            </Dialog>
           </section>
         )
       }
