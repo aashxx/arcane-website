@@ -4,15 +4,11 @@ import { RegisterContext } from '@/contexts/RegisterContext';
 import React, { useContext, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ANIMATIONS } from '@/utils/constants';
-import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from '@/components/ui/alert-dialog';
+import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, AlertDialogFooter, AlertDialogCancel } from '@/components/ui/alert-dialog';
 
 const RequestCard = ({ participant }) => {
 
     const { confirmParticipantRegistration, rejectParticipantRegistration } = useContext(RegisterContext);
-
-    useEffect(() => {
-        console.log(participant)
-    } ,[])
 
     return (
         <motion.article {...ANIMATIONS.up} className='bg-[#1c1c1c] font-expletus-sans items-center rounded-lg flex w-full justify-between gap-4 border border-arcane-primary p-5'>
