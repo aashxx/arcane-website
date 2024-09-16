@@ -179,7 +179,7 @@ export const TECH_EVENTS = [
         "Dr. A. Radhika",
         "Mrs. Sivasankari"
       ]
-    }
+    },
   },
   {
     "name": "Sector 6ix",
@@ -266,7 +266,43 @@ export const TECH_EVENTS = [
         "Mrs. Nithya.B",
         "Mrs. Sowmiya"
       ]
-    }
+    },
+    "rounds": [
+      {
+        "roundName": "Coder’s Duel",
+        "duration": "10 minutes",
+        "contestants": "60",
+        "description": "One vs One round where participants duel with their opponent to solve one coding problem. In each duel, the first participant to solve the problem wins reward points."
+      },
+      {
+        "roundName": "HackerRank Odyssey",
+        "duration": "20 minutes",
+        "contestants": "60",
+        "elimination": "25 contestants",
+        "description": "Using python, contestants need to analyse and solve coding questions in a given period of time. In this round, you’ll solve error debugging, and program using test cases. This is your chance to show off your speed and coding skills under pressure."
+      },
+      {
+        "roundName": "Rapid Rumble",
+        "duration": "15 minutes",
+        "contestants": "35",
+        "elimination": "15 contestants",
+        "description": "In this round, you’ll tackle five coding problems. Your goal is to solve each problem quickly and accurately. The first three to solve the given problem obtain reward points. This is your chance to show off your speed and coding skills under pressure."
+      },
+      {
+        "roundName": "Visual Decode",
+        "duration": "15 minutes",
+        "contestants": "20",
+        "elimination": "10 contestants",
+        "description": "Use Python's OpenCV to read and process the given images. Apply greyscale and threshold filters to reveal hidden words. Form a meaningful sentence with these words and complete the task within the specified time to earn reward points."
+      },
+      {
+        "roundName": "Buzzer Blitz",
+        "duration": "15 minutes",
+        "contestants": "10",
+        "elimination": "8 contestants",
+        "description": "A dynamic coding round where you’ll tackle three different problem statements, but there's a twist—when a buzzer rings, you must immediately stop your current task and shift to the next one, no matter where you are in your code. Each buzzer will signal a particular problem, and the buzzers can go off at any moment, keeping you on your toes! Your goal is to complete as much of each problem as possible before the next buzzer sounds."
+      }
+    ]
   }
 ];
 

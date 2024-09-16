@@ -67,6 +67,27 @@ const EventDetails = () => {
         <p className="text-[#d3d3d3] text-[0.9rem] text-justify">
           {event.description}
         </p>
+
+        {/* Render Rounds Section if rounds exist */}
+        {event.rounds && event.rounds.length > 0 && (
+          <>
+            <h3 className="text-3xl font-valorax text-arcane-primary mt-4">
+              Rounds
+            </h3>
+            <ul className="text-[#d3d3d3] text-[0.9rem] list-disc md:ml-6 ml-3">
+              {event.rounds.map((round, index) => (
+                <li key={index} className='text-justify'>
+                  <strong>{round.roundName}</strong> - {round.description}
+                  <div className="mt-1">
+                    <span>Duration: {round.duration}</span> | <span>Contestants: {round.contestants}</span>
+                    {round.elimination && <span> | Elimination: {round.elimination}</span>}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+
         <h3 className="text-3xl font-valorax text-arcane-primary mt-4">
           Rules
         </h3>

@@ -62,7 +62,7 @@ const Home = () => {
             <div className="h-64 w-96 bg-arcane-primary absolute md:-right-24 z-10 rounded-full blur-[150px]" />
             <div className='relative mt-10 z-20'>
                 <h3 className='text-white px-4 font-valorax text-2xl md:text-4xl text-center'>
-                    Previous <span className='text-arcane-primary'>Arcane</span> Glimpses
+                    <span className='text-arcane-primary'>Arcane</span> Glimpses
                 </h3>
                 <aside className='overflow-x-hidden mt-8'>
                     <SpotLight />
@@ -78,9 +78,6 @@ const Home = () => {
                     <a href={'/register'} className='px-10 py-2 text-white bg-black z-20'>
                         Register Now
                     </a>
-                    <button className='px-14 text-2xl hidden md:block mr-10 py-2 text-white bg-[#18181B] z-30 rounded-lg font-valorax'>
-                        2 days
-                    </button>
                 </aside>
             </div>
             <div className='mt-16 z-20 relative'>
@@ -118,8 +115,10 @@ const Home = () => {
                     </p>
                 </BoxReveal>
                 <BoxReveal duration={0.5} boxColor={'#9E325F'}>
-                    <a href='/register' className='px-10 py-2 text-white bg-arcane-primary mt-5 z-20'>
-                        Register Now
+                    <a href='/register'>
+                        <button className='px-10 py-2 text-white bg-arcane-primary mt-5 z-20'>
+                            Register Now
+                        </button>
                     </a>
                 </BoxReveal>
             </div>
